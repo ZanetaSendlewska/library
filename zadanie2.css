@@ -1,0 +1,66 @@
+body {
+  background-color: #b9e2f7;
+}
+
+.flexbox-container {
+  display: flex;
+  flex-direction: row;
+  height: 100px;
+  width: 100%;
+}
+
+/* Nagłówek */
+.library {
+  background-color: #579ec2;
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap-reverse;
+
+  height: 60px;
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+}
+
+a:link,
+a:visited {
+  color: #000000;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* Formularz */
+.form {
+  background-color: #6ec7f5;
+  width: 100%;
+}
+
+.Table {
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+}
+
+.menuTitle,
+.menuAuthor {
+  width: 30%;
+}
+
+.namePriority,
+.menuCategory {
+  width: 20%;
+}

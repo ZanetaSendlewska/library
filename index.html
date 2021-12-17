@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Biblioteka</title>
+    <link rel="stylesheet" href="zadanie2.css">
+    <meta name="description" content="Library" />
+    <meta name="author" content="Nazwa Firmy, Miejscowość" />
+    <meta name="keywords" content="library, book " />
+    <meta name="robots" content="none" />
+</head>
+
+<body onLoad = "loadFromLocalStorage()">
+    <div class="flexbox-container">
+        <div class="library">
+            <p>Biblioteka</p>
+        </div>
+        <div class="logo">
+            <img src="logo.jpg" alt="logo library" />
+        </div>
+    </div>
+
+    <div class="menu">
+        <div class="form"> 
+            <p>Formularz do dodania nowej książki</p>
+        </div>    
+    </div>
+
+
+    <div class="formRegistration">
+        <form id="form">
+            <label for="field_title">Tytuł książki</label><br>
+            <input type="text" name="title" id="field_title" required minlength=1/><br><br>
+
+            <label for="field_author">Autor książki</label><br>
+            <input type="text" name="author" id="field_author" required minlength=3/><br><br>
+
+            <label for="priority">Priorytet przeczytania</label><br>
+            <select name="priority" id="field_priority">
+                <option value="1">1-najniższy</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5-najwyższy</option>
+            </select><br><br>
+
+            <label for="category">Kategoria</label><br>
+            <select name="category" id="field_category">
+                <option value="1">Przygodowa</option>
+                <option value="2">Wojenna</option>
+                <option value="3">Historyczna</option>
+                
+            </select><br><br>
+            <input type="submit" id="Zarejestruj" value="Zarejestruj" onclick="validate()"><br><br>
+        </form>
+
+    <table border cellspacing=2 class="Table" id="Table">
+        <tr>
+            <td colspan="6" >Księgozbiór</td>
+        </tr>
+        <tr class="menuTable">
+            <td class="menuTitle">Tytuł</td>
+            <td class="menuAuthor">Autor</td>
+            <td class="menuPriority">Priorytet przeczytania</td>
+            <td class="menuCategory">Kategoria</td>  
+        </tr>
+    </table>
+
+</body>
+<script type="text/javascript" src="zadanie2.js"> </script>
+
+</html>
